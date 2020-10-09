@@ -1,2 +1,2 @@
-# Simple Captcha Generstor
+# Simple Captcha Generator
  
