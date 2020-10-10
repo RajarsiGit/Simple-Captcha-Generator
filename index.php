@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Simple CAPTCHA Script in PHP</title>
+    <title>MY CAPTCHA</title>
 	<style> 
 		body{
 			background: white;
-			display:flex; 
-			flex-direction:column; 
+			display: flex; 
+			flex-direction: column; 
 			align-items: center; 
 			justify-content: center; 
 		} 
@@ -23,12 +23,12 @@
   </body>
 </html>
 <?php
-session_start();
+	session_start();
 	if(isset($_POST) & !empty($_POST)){
 		if($_POST['captcha'] == $_SESSION['code']){
-			echo "Correct Captcha!";
+			echo "<h3>Correct Captcha!</h3>";
 		}else{
-			echo "Invalid Captcha!";
+			echo "<h3>Invalid Captcha!</h3>";
 		}
 	}
 ?>
